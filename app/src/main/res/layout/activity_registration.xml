@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.practice.firebaseregistrationlogin.RegistrationActivity">
+
+    <EditText
+        android:id="@+id/editTextRegFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Enter FullName"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextRegEmailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextRegFullName"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Enter Emailid"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextRegMobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextRegEmailid"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Enter Mobile Number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextRegPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextRegMobileNumber"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPersonName" />
+
+
+
+    <Button
+        android:id="@+id/buttonRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextRegPassword"
+        android:onClick="btnRegistrationUser_Click"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Registration" />
+</RelativeLayout>

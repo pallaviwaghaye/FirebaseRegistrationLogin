@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.practice.firebaseregistrationlogin.ProfileActivity">
+
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="16dp"
+        android:text="Welcome"
+        tools:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewProfileEmailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewWelcome"
+        android:layout_below="@+id/textViewWelcome"
+        android:layout_marginTop="48dp"
+        android:text="EmailId"
+        tools:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewWelcome"
+        android:layout_below="@+id/textViewProfileEmailId"
+        android:layout_marginTop="35dp"
+        android:onClick="btnLogout_click"
+        android:text="Logout" />
+</RelativeLayout>

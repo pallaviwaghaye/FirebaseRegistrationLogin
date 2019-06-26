@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.practice.firebaseregistrationlogin.LoginActivity">
+
+    <EditText
+        android:id="@+id/editTextLoginEmailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Enter Emailid"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextLoginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextLoginEmailid"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLoginPassword"
+        android:onClick="btnLoginUser_Click"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Login" />
+</RelativeLayout>
